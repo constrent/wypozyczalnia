@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="kontakt.css">
+
+    </head>
+    <body>
+        <div class="menu">
+            <div class="socialmedia">
+                <div class="social">
+                    <a href="https://www.instagram.com">
+                        <span class="icon">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </span>
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com">
+                        <span class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </span>
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="https://twitter.com">
+                        <span class="icon">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li class="list">
+                        <a href="start.html">
+                            <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                         
+                            <span class="text">Start</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="oferta.html">
+                            <span class="icon">
+                                <ion-icon name="construct-outline"></ion-icon>
+                            </span>
+                         
+                            <span class="text">Oferta</span>
+                        </a>
+                    </li>
+    
+                    <li class="list">
+                        <a href="logowanie.html">
+                            <span class="icon">
+                                <ion-icon name="person-outline"></ion-icon>
+                            </span>
+                           
+                            <span class="text">Logowanie</span>
+                        </a>
+                    </li>
+    
+                    <li class="list">
+                        <a href="cv.html">
+                            <span class="icon">
+                                <ion-icon name="document-text-outline"></ion-icon>
+                            </span>
+                           
+                            <span class="text">CV</span>
+                        </a>
+                    </li>
+    
+                    <li class="list active">
+                        <a href="">
+                            <span class="icon">
+                                <ion-icon name="call-outline"></ion-icon>
+                            </span>
+                            
+                            <span class="text">Kontakt</span>
+                        </a>
+                    </li>
+                    <div class="indicator"></div>
+                </ul>
+            </div>
+        </div>
+        <div class="kontakt">
+            <div class="tel">
+                <h1>Kontakt</h1>
+                <p>Jeżeli masz pytania lub chcesz złożyć zamówienie zadzwoń pod numer 543-356-238.</p>
+                <p>Faktura dotycząca twojego zamówienia zostanie wysłana na podany przezciebie e-mail.</p>
+                <div class="zadzwon">
+                    <p>543-356-238</p>
+                </div>
+            </div>
+            <div class="opinie">
+                <h1>Co mówią o nas klienci</h1>
+                <div class="slider">
+                    <figure>
+                        <div class="opinia"><p>Wspaniała obługa, wysokiej jakości sprzęt polecam!</p><p><em>Stanisław Bożydar</em></p><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-half"></ion-icon></div>
+                        <div class="opinia"><p>Sprzęt dobrze zadbany, nie mam nic przeciwko.</p><p><em>Marcin Lipton</em></p><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></div>
+                        <div class="opinia"><p>Uczciwe ceny nie do porównania!</p><p><em>Jan Olbracht</em></p><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-half"></ion-icon></div>
+                        <div class="opinia"><p>Szeroki wybór dobrej jakości sprzętu polecam.</p><p><em>Tomasz Polak</em></p><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="nawigacjastopki">
+                <div class="nawigacjastopkilink"><a href="start.html">Start</a></div>
+                <div class="nawigacjastopkilink"><a href="oferta.html">Oferta</a></div>
+                <div class="nawigacjastopkilink"><a href="logowanie.html">Logowanie</a></div>
+                <div class="nawigacjastopkilink"><a href="cv.html">CV</a></div>
+                <div class="nawigacjastopkilink"><a href="">Kontakt</a></div>
+            </div>
+            <div class="copyright">Copyright &copy 2023 CONSTRENT</div>
+        </div>
+        <script>
+            const list = document.querySelectorAll('.list');
+            function activeLink(){
+                list.forEach((item) =>item.classList.remove('active'));
+                this.classList.add('active');
+            }
+            list.forEach((item) =>item.addEventListener('click',activeLink));
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    </body>
+
+</html>

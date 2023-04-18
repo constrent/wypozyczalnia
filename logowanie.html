@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="logowanie.css">
+
+    </head>
+    <body>
+        <div class="menu">
+            <div class="socialmedia">
+                <div class="social">
+                    <a href="https://www.instagram.com">
+                        <span class="icon">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </span>
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com">
+                        <span class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </span>
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="https://twitter.com">
+                        <span class="icon">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li class="list">
+                        <a href="start.html">
+                            <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                         
+                            <span class="text">Start</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="oferta.html">
+                            <span class="icon">
+                                <ion-icon name="construct-outline"></ion-icon>
+                            </span>
+                         
+                            <span class="text">Oferta</span>
+                        </a>
+                    </li>
+    
+                    <li class="list active">
+                        <a href="">
+                            <span class="icon">
+                                <ion-icon name="person-outline"></ion-icon>
+                            </span>
+                           
+                            <span class="text">Logowanie</span>
+                        </a>
+                    </li>
+    
+                    <li class="list">
+                        <a href="cv.html">
+                            <span class="icon">
+                                <ion-icon name="document-text-outline"></ion-icon>
+                            </span>
+                           
+                            <span class="text">CV</span>
+                        </a>
+                    </li>
+    
+                    <li class="list">
+                        <a href="kontakt.html">
+                            <span class="icon">
+                                <ion-icon name="call-outline"></ion-icon>
+                            </span>
+                            
+                            <span class="text">Kontakt</span>
+                        </a>
+                    </li>
+                    <div class="indicator"></div>
+                </ul>
+            </div>
+        </div>
+        <div class="boxy">
+            <div class="box">
+                <div class="form">
+                    <h2>Benefity założenia konta</h2>
+                    <p>Informujemy że dane użytkowników zalogowanych są w pełni bezpieczne</p>
+                    <p>Użytkownicy zalogowani:</p>
+                    <ul>
+                        <li>Mają 10% zniżki przy pierwszym zakupie</li>
+                        <li>Zostaną powiadomieni o nowościach dotyczących naszej oferty</li>
+                        <li>7% zniżki przy wynajęciu nowego sprzętu</li>
+                        <li>Przy zakupie powyżej 5 tysięcy zł mogą wynająć jeszcze jedną rzecz za 1 zł</li>
+                        <li>Jeżeli skożystali z naszej usługi 3 raz dostaną rabat o wysokości 500 zł</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box">
+                <div class="form">
+                    <h2>Zaloguj się</h2>
+                    <div class="inputBox">
+                        <input type="text" required="required">
+                        <span>Nazwa Użytkownika</span>
+                        <i></i>
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" required="required">
+                        <span>Hasło</span>
+                        <i></i>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" required="required">
+                        <span>Numer Telefonu</span>
+                        <i></i>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" required="required">
+                        <span>Imie</span>
+                        <i></i>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" required="required">
+                        <span>Nazwisko</span>
+                        <i></i>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" required="required">
+                        <span>E-mail</span>
+                        <i></i>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" required="required">
+                        <span>Adres Korespondencyjny</span>
+                        <i></i>
+                    </div>
+                    <div class="links">
+                        <a href="#">Zapomniałeś Hasła?</a>
+                        <a href="#">Zarejestruj się</a>
+                    </div>
+                    <input type="submit" value="Zaloguj">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="nawigacjastopki">
+                <div class="nawigacjastopkilink"><a href="start.html">Start</a></div>
+                <div class="nawigacjastopkilink"><a href="oferta.html">Oferta</a></div>
+                <div class="nawigacjastopkilink"><a href="">Logowanie</a></div>
+                <div class="nawigacjastopkilink"><a href="cv.html">CV</a></div>
+                <div class="nawigacjastopkilink"><a href="kontakt.html">Kontakt</a></div>
+            </div>
+            <div class="copyright">Copyright &copy 2023 CONSTRENT</div>
+        </div>
+        <script>
+            const list = document.querySelectorAll('.list');
+            function activeLink(){
+                list.forEach((item) =>item.classList.remove('active'));
+                this.classList.add('active');
+            }
+            list.forEach((item) =>item.addEventListener('click',activeLink));
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    </body>
+
+</html>
